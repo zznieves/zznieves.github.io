@@ -1,0 +1,11 @@
+/* Condensed version (Always be as generic as possible)*/
+div {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+div img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
