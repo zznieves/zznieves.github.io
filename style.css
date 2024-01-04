@@ -1,0 +1,98 @@
+
+* {
+    font-family: 'Fira Code', monospace;
+}
+
+/* navbar ruleset */
+
+nav {
+
+    border: 1px solid black;
+
+    display: flex;
+
+    /* horizontal axis (x) */
+    justify-content: space-between;
+
+    /* vertical axis (y) */
+    align-items: center;
+}
+
+nav > * {
+    border: 1px solid;
+}
+
+.navbar-left {
+    margin-left: 1.5%;
+}
+
+.navbar-right {
+    margin-right: 3%;
+
+}
+
+ul.navbar-links {
+    padding: 0;
+}
+
+.navbar-links > li {
+
+    list-style-type: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* homepage ruleset */
+
+#home {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: 1px solid black;
+
+    padding: 2%;
+    margin: 2% 0;
+}
+
+
+
+.intro-2 > h1 {
+    font-family: 'Inter';
+    font-size: 6vw;
+
+    margin: 0;
+}
+
+.intro-3 > p {
+    font-family: 'Inter';
+    line-height: 1.5;
+}
+
+
+.pfp-container > img {
+    border-radius: 50%;
+
+    border: 3px solid black;
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+
+    height: 25rem;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
