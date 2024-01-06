@@ -12,11 +12,13 @@
             @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&family=Lato&display=swap');
         </style>
 
+        <script src="./script.js"></script>
+
     </head>
 
     <body>
 
-        <nav>
+        <nav id="navbar">
             <div class="navbar-left">
                 <h1>code: Zayon Nieves</h1>
             </div>
@@ -24,19 +26,19 @@
             <div class="navbar-right">
                 <ul class="navbar-links">
                     <li>
-                        <a href=""><span class="num">01.</span> Home</a>
+                        <a href="#home" onclick="transport('home')"><span class="num">01.</span> Home</a>
                     </li>
 
                     <li>
-                        <a href=""><span class="num">02.</span> About</a>
+                        <a href="#about" onclick="transport('about')"><span class="num">02.</span> About</a>
                     </li>
 
                     <li>
-                        <a href=""><span class="num">03.</span> Projects</a>
+                        <a href="#projects" onclick="transport('projects')"><span class="num">03.</span> Projects</a>
                     </li>
 
                     <li>
-                        <a href=""><span class="num">04.</span> Contact</a>
+                        <a href="#contact" onclick="transport('contact')"><span class="num">04.</span> Contact</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +48,7 @@
 
             <div class="home-left">
                 <div class="intro-1">
-                    <h3>01. Hi, my name is</h3>
+                    <h3>Hi, my name is</h3>
                 </div>
                 <div class="intro-2">
                     <h1>Zayon Nieves</h1>
@@ -74,7 +76,7 @@
         <div id="about">
 
             <div class="about-title">
-                <h2>02. About</h2>
+                <h2>About</h2>
             </div>
 
             <div class="about-content">
@@ -121,7 +123,7 @@
         <div id="projects">
 
             <div class="projects-title">
-                <h2>03. Projects</h2>
+                <h2>Projects</h2>
             </div>
 
             <div class="projects project-1">
@@ -135,7 +137,7 @@
         <div id="contact">
 
             <div class="contact-title">
-                <h2>04. Contact</h2>
+                <h2>Contact</h2>
             </div>
 
             <div class="contact-icon">

@@ -7,9 +7,7 @@ body {
 
 }
 
-body > div {
-    border: 1px solid black;
-}
+
 
 
 * {
@@ -35,8 +33,6 @@ h2 {
 /* navbar ruleset */
 
 nav {
-
-    border: 1px solid black;
     width: 100%;
 
     display: flex;
@@ -46,7 +42,18 @@ nav {
 
     /* vertical axis (y) */
     align-items: center;
+
+    /* make navbar stick to the top of browser window when scrolling */
+    position: fixed;
+    top: 0;
 }
+
+/* change navbar color when scrolling down from initial position */
+nav.scrolled, nav.scrolled span, nav.scrolled a{
+    background-color: black;
+    color: white;
+}
+
 
 .navbar-left {
     margin-left: 1.5%;
@@ -69,6 +76,10 @@ ul.navbar-links {
 
     list-style-type: none;
     display: inline;
+}
+
+.num {
+    color: black;
 }
 
 a {
