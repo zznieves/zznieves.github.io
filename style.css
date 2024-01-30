@@ -358,3 +358,8 @@ a {
 
     margin: 5% 0;
 }
+
+#email-button > a {
+
+    color: black;
+}
